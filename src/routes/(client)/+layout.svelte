@@ -2,6 +2,8 @@
     import { onMount } from 'svelte'
     import { pwaInfo } from 'virtual:pwa-info'
 
+    import '$lib/common/style.scss'
+
     onMount(async () => {
         if (pwaInfo) {
             const { registerSW } = await import('virtual:pwa-register')
